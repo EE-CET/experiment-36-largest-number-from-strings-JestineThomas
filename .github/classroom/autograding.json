@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/LargestNumber.java",
+      "run": "java -cp src LargestNumber",
+      "input": "3\n10 3 31",
+      "output": "33110",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Tricky Case (9 vs 90)",
+      "setup": "javac src/LargestNumber.java",
+      "run": "java -cp src LargestNumber",
+      "input": "2\n9 90",
+      "output": "990",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "All Zeros",
+      "setup": "javac src/LargestNumber.java",
+      "run": "java -cp src LargestNumber",
+      "input": "3\n0 0 0",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Large Set",
+      "setup": "javac src/LargestNumber.java",
+      "run": "java -cp src LargestNumber",
+      "input": "5\n3 30 34 5 9",
+      "output": "9534330",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
